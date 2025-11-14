@@ -1,3 +1,5 @@
 env
 .age-key.txt
 *.key
+age-key.txt
+age.agekey
