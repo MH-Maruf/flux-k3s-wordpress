@@ -4,3 +4,4 @@ resources:
   - infra/
   - apps/
   - monitoring/
+  - flux-system/

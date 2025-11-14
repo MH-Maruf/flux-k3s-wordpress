@@ -24,3 +24,5 @@ spec:
           kubernetes.io/ingress.class: nginx
     promtail:
       enabled: true
+    loki:
+      enabled: true
