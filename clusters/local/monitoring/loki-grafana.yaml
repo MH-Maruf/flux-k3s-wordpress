@@ -26,3 +26,4 @@ spec:
       enabled: true
     loki:
       enabled: true
+  targetNamespace: monitoring
