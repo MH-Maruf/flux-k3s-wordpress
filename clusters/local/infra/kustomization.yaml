@@ -4,3 +4,4 @@ resources:
   - metallb-config.yaml
   - helmrepository-ingress-nginx.yaml
   - ingress-nginx.yaml
+  - helmrepository-bitnami.yaml
