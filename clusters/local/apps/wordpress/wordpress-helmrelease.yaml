@@ -4,7 +4,7 @@ metadata:
   name: wordpress
   namespace: flux-system
 spec:
-  interval: 5m
+  interval: 10m
   chart:
     spec:
       chart: wordpress
@@ -17,13 +17,14 @@ spec:
     wordpressUsername: admin
     wordpressPassword: admin123
     wordpressEmail: admin@example.com
-    mariadb.enabled: false
+    mariadb:
+      enabled: false
     externalDatabase:
       host: mysql.default.svc.cluster.local
-      port: 3306
       user: wordpress
       password: wordpresspass
       database: wordpress
+      port: 3306
     service:
       type: ClusterIP
     ingress:
@@ -31,3 +32,4 @@ spec:
       hostname: app.local
       annotations:
         kubernetes.io/ingress.class: nginx
+  targetNamespace: default
