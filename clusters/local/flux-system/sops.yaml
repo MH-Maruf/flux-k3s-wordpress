@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: sops-age
+  namespace: flux-system
+data:
+  .sops.yaml: |
+    creation_rules:
+      - path_regex: \.enc\.yaml$
+        age: $PUBLIC_KEY
